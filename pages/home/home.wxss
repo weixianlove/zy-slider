@@ -1,0 +1,14 @@
+/* pages/home/home.wxss */
+
+.top {
+    text-align: center;
+}
+
+.des {
+    text-align: center;
+}
+
+.zy-slider {
+    position: relative;
+    margin: 60rpx;
+}

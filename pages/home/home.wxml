@@ -1,0 +1,16 @@
+<!-- pages/home/home.wxml -->
+
+    <view class="top">min 0 max 100</view>
+    <view class="des">{{low}}-{{heigh}}</view>
+<view class="zy-slider">
+    <zy-slider minValue="0" maxValue="100" min="0" max="100" bind:lowValueChange="lowValueChangeAction"
+                bind:heighValueChange="heighValueChangeAction" />
+</view>
+
+ <view class="top">min 100 max 1000</view>
+    <view class="des">{{low1}}-{{heigh1}}</view>
+<view class="zy-slider">
+    <zy-slider minValue="{{low1}}" maxValue="{{heigh1}}" min="100" max="1000" bind:lowValueChange="lowValueChangeAction1"
+                bind:heighValueChange="heighValueChangeAction1" />
+</view>
+

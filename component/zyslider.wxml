@@ -1,0 +1,11 @@
+<!--component/zyslider.wxml-->
+
+<view class="container"> 
+<view class="slider-item min" style="left:{{leftValue}}rpx" catchtouchmove="_minMove"></view>
+<view class="slider-item max" style="left:{{rightValue}}rpx" catchtouchmove="_maxMove"></view>
+
+<view class="slider-body left" style="left:{{sliderLength}}rpx; width:{{leftValue}}rpx;"></view>
+<view class="slider-body body" style="left:{{leftValue}}rpx; width:{{rightValue-leftValue}}rpx;"></view>
+<view class="slider-body right" style="left:{{rightValue}}rpx; width:{{totalLength - rightValue}}rpx;"></view>
+<slot></slot>
+</view>
