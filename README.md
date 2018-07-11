@@ -1,7 +1,7 @@
 # zy-slider
 微信小程序双向滑动slider
 
-![双向slider截图](https://github.com/weixianlove/zy-slider/blob/master/屏幕快照%202018-07-11%20下午8.09.46.png);
+![双向slider截图](https://github.com/weixianlove/zy-slider/blob/master/屏幕快照%202018-07-11%20下午8.09.46.png)
 
 一个选择数值范围的slider，双向可以滑动
 
@@ -39,3 +39,4 @@ bind:heighValueChange : function  右边滑块回调 {heighValue：heighValue}
     margin: 60rpx;
 }
 ```
+[简书](https://www.jianshu.com/p/7eaf95d1ae1f)
