@@ -39,4 +39,4 @@ bind:heighValueChange : function  右边滑块回调 {heighValue：heighValue}
     margin: 60rpx;
 }
 ```
-[简书](https://www.jianshu.com/p/7eaf95d1ae1f)
+[简书](https://www.jianshu.com/p/7eaf95d1ae1f)地址
