@@ -19,6 +19,15 @@ Component({
     },
     maxValue: {
       type: Number
+    },
+    blockColor:{
+      type: String
+    },
+    backgroundColor:{
+      type: String
+    },
+    selectedColor:{
+      type: String
     }
   },
 

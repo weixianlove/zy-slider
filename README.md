@@ -2,7 +2,7 @@
 微信小程序双向滑动slider，可用于价格范围选取等功能。
 
 
-本项目 fork 自 [weixianlove/zy-slider](https://github.com/weixianlove/zy-slider) ，根据我自己的项目需要，加入了一些小功能。
+
 
 <img src="https://user-images.githubusercontent.com/12731778/43645614-0b99621c-9765-11e8-8787-c1ac2d544c11.png" height = "500" />
 
@@ -34,8 +34,11 @@ minValue: Number/String slider 左边滑块初始位置
 maxValue: Number/String slider 右边滑块初始位置
 bind:lowValueChange : function 左边滑块回调 {lowValue：lowValue}
 bind:heighValueChange : function  右边滑块回调 {heighValue：heighValue}
+blockColor : String slider 圆形滑块颜色（默认 #19896f）
+backgroundColor : String slider 背景条的颜色（默认 #ddd）
+selectedColor : String slider 已选择部分的颜色（默认 #19896f）
 ```
-###### 我新加入的方法：
+###### 方法说明：
 ```
 reset(): 重置组件
 show(): 显示组件
@@ -54,4 +57,5 @@ hide(): 隐藏组件
     margin: 60rpx;
 }
 ```
-原作者[简书](https://www.jianshu.com/p/7eaf95d1ae1f)地址
+
+[简书](https://www.jianshu.com/p/7eaf95d1ae1f)地址
