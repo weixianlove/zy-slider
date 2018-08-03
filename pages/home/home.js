@@ -42,6 +42,20 @@ Page({
     })
   },
 
+  hideSlider: function (e) {
+    this.selectComponent("#zy-slider").hide()
+    this.selectComponent("#zy-slider1").hide()
+  },
+
+  showSlider: function (e){
+    this.selectComponent("#zy-slider").show()
+    this.selectComponent("#zy-slider1").show()
+  },
+
+  resetSlider: function (e){
+    this.selectComponent("#zy-slider").reset()
+    this.selectComponent("#zy-slider1").reset()
+  },
 
 
   /**

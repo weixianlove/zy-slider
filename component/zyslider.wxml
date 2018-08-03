@@ -1,6 +1,6 @@
 <!--component/zyslider.wxml-->
 
-<view class="container"> 
+<view class="container {{hideOption}}"> 
 <view class="slider-item min" style="left:{{leftValue}}rpx" catchtouchmove="_minMove"></view>
 <view class="slider-item max" style="left:{{rightValue}}rpx" catchtouchmove="_maxMove"></view>
 
