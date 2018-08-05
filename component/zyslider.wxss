@@ -46,3 +46,7 @@
     bottom: 40rpx;
     /*left: 600rpx;*/
 }
+
+.hide{
+  display: none;
+}

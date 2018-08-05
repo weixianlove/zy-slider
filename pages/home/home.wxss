@@ -12,3 +12,8 @@
     position: relative;
     margin: 60rpx;
 }
+
+.button{
+    width: 200rpx;
+    margin-top: 20px;
+}

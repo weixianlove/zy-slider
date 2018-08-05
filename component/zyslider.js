@@ -19,6 +19,15 @@ Component({
     },
     maxValue: {
       type: Number
+    },
+    blockColor:{
+      type: String
+    },
+    backgroundColor:{
+      type: String
+    },
+    selectedColor:{
+      type: String
     }
   },
 
@@ -35,7 +44,8 @@ Component({
     bigLength: 0,
     ratio: 0.5,
     sliderLength: 40,
-    containerLeft: 0 //标识整个组件，距离屏幕左边的距离
+    containerLeft: 0, //标识整个组件，距离屏幕左边的距离
+    hideOption: '', //初始状态为显示组件
   },
 
   /**
@@ -107,7 +117,34 @@ Component({
 
       var myEventDetail = { heighValue: heighValue }
       this.triggerEvent('heighValueChange', myEventDetail)
-    }
+    },
+
+    /**
+     * 隐藏组件
+     */
+    hide: function () {
+      this.setData({
+        hideOption: 'hide',
+      })
+    },
+    /**
+     * 显示组件
+     */
+    show: function () {
+      this.setData({
+        hideOption: '',
+      })
+    },
+    /**
+    * 重置
+    */
+    reset: function () {
+      this.setData({
+        rightValue: this.data.totalLength,
+        leftValue: 0,
+      })
+    },
+
   },
 
   ready: function () {
