@@ -3,7 +3,7 @@
     <view class="top">min 0 max 100</view>
     <view class="des">{{low}}-{{heigh}}</view>
 <view class="zy-slider">
-    <zy-slider id="zy-slider" minValue="0" maxValue="100" min="0" max="100" bind:lowValueChange="lowValueChangeAction"
+    <zy-slider id="zy-slider" minValue="0" maxValue="10" min="0" max="100" bind:lowValueChange="lowValueChangeAction"
                 bind:heighValueChange="heighValueChangeAction" />
 </view>
 

@@ -5,27 +5,35 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    /** slider 最小值 */
     min: {
       type: Number
     },
+    /** slider 最大值 */
     max: {
       type: Number
     },
+    /** 步进 （没做，有时间再说，项目里没用到撒） */
     step: {
       type: Number
     },
+    /** 预选选择的小值*/
     minValue: {
       type: Number
     },
+    /** 预选选择的大值 */
     maxValue: {
       type: Number
     },
+    /** 滑块颜色 */
     blockColor:{
       type: String
     },
+    /** 未选择进度条颜色 */
     backgroundColor:{
       type: String
     },
+    /** 已选择进度条颜色 */
     selectedColor:{
       type: String
     }
@@ -37,9 +45,9 @@ Component({
    */
   data: {
     min: 0,
-    max: 10000,
+    max: 100,
     leftValue: 0,
-    rightValue: '不限',
+    rightValue: 100,
     totalLength: 0,
     bigLength: 0,
     ratio: 0.5,
@@ -74,11 +82,11 @@ Component({
         rightValue: right
       })
     },
+
     /**
      * 左边滑块滑动
      */
     _minMove: function (e) {
-
       let pagex = e.changedTouches[0].pageX / this.data.ratio - this.data.containerLeft - this.data.sliderLength / 2
 
       if (pagex + this.data.sliderLength >= this.data.rightValue) {
@@ -91,7 +99,7 @@ Component({
         leftValue: pagex
       })
 
-      let lowValue = parseInt(pagex / this.data.bigLength * parseInt(this.data.max) + this.data.min)
+      let lowValue = parseInt(pagex / this.data.bigLength * parseInt(this.data.max - this.data.min) + this.data.min)
       var myEventDetail = { lowValue: lowValue }
       this.triggerEvent('lowValueChange', myEventDetail)
     },
@@ -113,7 +121,7 @@ Component({
       })
 
       pagex = pagex - this.data.sliderLength
-      let heighValue = parseInt(pagex / this.data.bigLength * this.data.max)
+      let heighValue = parseInt(pagex / this.data.bigLength * (this.data.max - this.data.min) + this.data.min)
 
       var myEventDetail = { heighValue: heighValue }
       this.triggerEvent('heighValueChange', myEventDetail)

@@ -7,8 +7,8 @@ Page({
   data: {
     low: 0,
     heigh: 100,
-    low1: 500,
-    heigh1: 800
+    low1: 200,
+    heigh1: 500
   },
 
   /**
